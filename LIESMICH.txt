@@ -1,0 +1,82 @@
+
+		 ============================
+		 =   Ballerburg SDL v1.2.2  =
+		 ============================
+
+	    Copyright (C) 1987, 1989  Eckhard Kruse
+	    Copyright (C) 2010, 2024  Thomas Huth
+
+
+	  Für meine Schwester Martina Huth - ich werde
+	nie die vielen schönen Stunden vergessen, die wir
+	  mit diesem Spiel in unserer Kindheit hatten.
+
+
+ 1) Lizenz
+ ---------
+
+Dieses Programm ist freie Software. Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation
+veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß
+Version 3 der Lizenz oder (nach Ihrer Option) jeder späteren Version.
+
+Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, dass es
+Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne
+die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN
+BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.
+
+Sie sollten ein Exemplar der GNU General Public License zusammen mit
+diesem Programm erhalten haben. Falls nicht, siehe kann die Lizenz
+unter <http://www.gnu.org/licenses/> eingesehen werden.
+
+
+ 2) Was ist Ballerburg?
+ ----------------------
+
+Ballerburg ist ein klassisches Burgenkampfspiel, bei dem sich zwei
+durch einen Berg getrennte Burgen mit ihren Kanonen gegenseitig
+bekämpfen müssen. 
+Ballerburg wurde 1987 von Eckhard Kruse für den damals topaktuellen
+16/32-Bit Computer Atari ST entwickelt. Jetzt, ein viertel Jahrhundert
+später liegt mit "Ballerburg SDL" nun die Anpassung des alten Source-
+codes, welcher von Eckhard Kruse freundlicherweise frei gegeben wurde,
+an GNU/Linux und andere Systeme mit SDL-Unterstützung vor.
+
+
+ 3) Compilieren des Sourcecodes
+ ------------------------------
+
+Zum Compilieren wird der GCC C-Compiler, CMake und die SDL Bibliothek
+(http://www.libsdl.org/ - bevorzugt Version 1.2) inklusive Header bzw.
+Development-Paket benötig.
+
+Vor dem ersten Compilieren muss "cmake" mit dem Pfad zu den Sourcen als
+Parameter aufgerufen werden. Alternativ kann das "configure"-Script
+oder ein Tool wie "cmake-gui" benutzt werden.
+
+Nach dem Konfigurationsvorgang kann der Sourcecode mittels Aufruf von
+"make" compiliert und anschließen mittels "make install" installiert
+werden.
+
+
+ 4) Spielstart
+ -------------
+
+Zum Starten des Spiels muss man das "ballerburg" Programm starten.
+Der Spielablauf sollte weitgehen selbsterklärend sein, notfalls gibt
+es im doc-Verzeichnis auch die Anleitung des orginalen Ballerburgs
+(Datei "anleitung.html"). Über die "ESC"-Taste erreicht man das Hauptmenü
+zum Einstellen der Spieler und um ein neues Spiel zu starten. Mittels der
+"f"-Taste kann zwischen dem Fenster- und Vollbildmodus gewechselt werden,
+und mit "q" kann das Spiel beendet werden.
+
+
+ 5) Kontakt
+ ----------
+
+Bei Fragen, Anregung, Patches oder Kritik bitte eine Mail an folgende
+Adresse schreiben:
+
+	huth at tuxfamily.org
+
+Und nun viel Spaß mit Ballerburg!

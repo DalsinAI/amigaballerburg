@@ -1,0 +1,442 @@
+# Italian translations for Ballerburg package
+# Copyright (C) 2013 Andrea Musuruane <musuruan(at)gmail.com>.
+# This file is distributed under the same license as the ballerburg package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ballerburg 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-11 16:43+0200\n"
+"PO-Revision-Date: 2014-10-11 17:27+0100\n"
+"Last-Translator: Andrea Musuruane <musuruan(at)gmail.com>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: src/baller1.c:68
+msgid "Oaf"
+msgstr "Goffo"
+
+#: src/baller1.c:68
+msgid "Yokel"
+msgstr "Bifolco"
+
+#: src/baller1.c:68
+msgid "Boor"
+msgstr "Cafone"
+
+#: src/baller1.c:68
+msgid "Doofus"
+msgstr "Stupido"
+
+#: src/baller1.c:69
+msgid "Fumbler"
+msgstr "Pasticcione"
+
+#: src/baller1.c:69
+msgid "Geezer"
+msgstr "Vecchio"
+
+#: src/baller1.c:69
+msgid "Ruffian"
+msgstr "Farabutto"
+
+#: src/baller1.c:105
+msgid "Not enough memory for loading the castles."
+msgstr "Memoria insufficiente per caricare i castelli."
+
+#: src/baller1.c:117
+msgid "William"
+msgstr "William"
+
+#: src/baller1.c:118
+msgid "Frederick"
+msgstr "Frederick"
+
+#: src/baller1.c:182
+msgid "Games"
+msgstr "Partite"
+
+#: src/baller1.c:183
+msgid "Total won"
+msgstr "Totale vinte"
+
+#: src/baller1.c:184
+msgid "Total lost"
+msgstr "Totale perse"
+
+#: src/baller1.c:185
+msgid "Won in %"
+msgstr "Vittorie in %"
+
+#: src/baller1.c:297
+msgid "You don't have enough gunpowder."
+msgstr "Non hai abbastanza polvere da sparo."
+
+#: src/baller1.c:297 src/baller1.c:301
+msgid "Cancel"
+msgstr "Annulla"
+
+#: src/baller1.c:301
+msgid "You don't have any cannonballs left."
+msgstr "Non hai abbastanza palle di cannone."
+
+#: src/baller1.c:387
+#, c-format
+msgid "!! %s has won !!"
+msgstr "%s ha vinto!!"
+
+#: src/baller1.c:400
+#, c-format
+msgid "( %s' king was hit,"
+msgstr "( il Re di %s è stato colpito,"
+
+#: src/baller1.c:402
+#, c-format
+msgid "( %s's king was hit,"
+msgstr "( il Re di %s è stato colpito,"
+
+#: src/baller1.c:403
+msgid "and upon hearing this, the people capitulated. )"
+msgstr "e dopo aver sentito questo, il popolo si arrese. )"
+
+#: src/baller1.c:407
+#, c-format
+msgid "( %s' king has capitulated"
+msgstr "( Il Re di %s si è arreso"
+
+#: src/baller1.c:410
+#, c-format
+msgid "( %s's king has capitulated"
+msgstr "( Il Re di %s si è arreso"
+
+#: src/baller1.c:412
+msgid "  because of the hopeless situation. )"
+msgstr "  a causa della situazione disperata. )"
+
+#: src/baller1.c:415
+#, c-format
+msgid "( %s has no folk left. )"
+msgstr "( %s non ha più sudditi. )"
+
+#: src/baller1.c:419
+msgid "( The limit of maximum rounds has been reached."
+msgstr "( E' stato raggiunto il limite massimo di turni impostato."
+
+#: src/baller1.c:420
+#, c-format
+msgid "%s is worse off. )"
+msgstr "%s sta peggio. )"
+
+#: src/baller1.c:516
+msgid "Wind:"
+msgstr "Vento:"
+
+#: src/baller2.c:507
+msgid " Round     "
+msgstr " Turno     "
+
+#: src/baller2.c:680
+msgid "The king says:"
+msgstr "Il Re dice:"
+
+#: src/baller2.c:681
+msgid "Humbly acknowledged"
+msgstr "Ringraziato con umiltà"
+
+#: src/baller2.c:682
+msgid ""
+"Well...\n"
+" alright...\n"
+" Carry on..."
+msgstr ""
+"Beh...\n"
+" va bene...\n"
+" Prosegui..."
+
+#: src/baller2.c:683
+msgid ""
+"We are satisfied\n"
+" with your performance!"
+msgstr ""
+"Siamo soddisfatti\n"
+" del tuo rendimento!"
+
+#: src/baller2.c:684
+msgid ""
+"Excellent,\n"
+" keep at it!"
+msgstr ""
+"Eccellente,\n"
+" continua così!"
+
+#: src/baller2.c:685
+msgid ""
+"Maybe you ought to\n"
+" lower Our taxes..."
+msgstr ""
+"Forse dovresti\n"
+" abbassare le nostre tasse..."
+
+#: src/baller2.c:686
+msgid ""
+"If you keep this up,\n"
+" We shall discharge you!"
+msgstr ""
+"Se continui così,\n"
+" dovremo congedarti!"
+
+#: src/baller2.c:687
+msgid ""
+"Why don't you buy\n"
+" a shaft tower..."
+msgstr ""
+"Perché non compri\n"
+" un castelletto?"
+
+#: src/baller2.c:688
+msgid ""
+"You ought to\n"
+" kindly make more of\n"
+" an effort!"
+msgstr ""
+"Cortesemente\n"
+" dovresti fare più\n"
+" di uno sforzo!"
+
+#: src/baller2.c:689
+msgid ""
+"You don't need to visit Us\n"
+" in each round."
+msgstr ""
+"Non devi venire a trovarci\n"
+" ad ogni turno."
+
+#: src/baller2.c:690
+#, c-format
+msgid ""
+"Are you aware\n"
+" that you have already visited Us\n"
+" %d times thus far?"
+msgstr ""
+"Sei consapevole\n"
+" che sei già venuto a trovarci\n"
+" %d volte fino ad ora?"
+
+#: src/baller2.c:691
+msgid ""
+"So, are you certain\n"
+" that you will manage\n"
+" without a weather vane?"
+msgstr ""
+"Allora, sei certo\n"
+" di riuscirci\n"
+" senza una banderuola?"
+
+#: src/baller2.c:692
+msgid "Nice to see you..."
+msgstr "Piacere di vederti..."
+
+#: src/baller2.c:693
+msgid ""
+"What are We supposed\n"
+" to say in such an\n"
+" early phase?"
+msgstr ""
+"Cosa dovremmo\n"
+" dire in una fase\n"
+" così precoce?"
+
+#: src/baller2.c:694
+msgid ""
+"You ought to earn more money,\n"
+" build more shaft towers,\n"
+" and vanquish the opponent."
+msgstr ""
+"Dovresti guadagnare più soldi,\n"
+" costruire più castelletti,\n"
+" e sconfiggere l'avversario."
+
+#: src/baller2.c:695
+msgid ""
+"We do not have anything new\n"
+" to say to you."
+msgstr ""
+"Non abbiamo nulla di nuovo\n"
+" da dirti."
+
+#: src/baller2.c:696
+msgid ""
+"We are pleased for you\n"
+" to come around and visit Us."
+msgstr ""
+"Siamo contenti che\n"
+" tu sia venuto a trovarci."
+
+#: src/baller2.c:711
+msgid ""
+"The king is not in the mood\n"
+"to talk to you."
+msgstr ""
+"Il Re non è in vena \n"
+"di parlare con te."
+
+#: src/baller2.c:711
+msgid "Too bad."
+msgstr "Peccato."
+
+#: src/ballergui.c:52 src/settings.c:222
+msgid "Quit Ballerburg?"
+msgstr "Esci da Ballerburg?"
+
+#: src/ballergui.c:52 src/settings.c:222
+msgid "Yes"
+msgstr "Sì"
+
+#: src/ballergui.c:52 src/settings.c:222
+msgid "No"
+msgstr "No"
+
+#: src/cannoneer.c:59
+msgid "Cannon"
+msgstr "Cannone"
+
+#: src/cannoneer.c:61
+msgid "Angle:"
+msgstr "Angolo:"
+
+#: src/cannoneer.c:68 src/market.c:83
+msgid "Gunpowder:"
+msgstr "Polvere:"
+
+#: src/market.c:77
+msgid "You have:"
+msgstr "Hai:"
+
+#: src/market.c:79
+msgid "Funds:"
+msgstr "Capitale:"
+
+#: src/market.c:80
+msgid "Shaft towers:"
+msgstr "Castelletti:"
+
+#: src/market.c:81
+msgid "Cannons:"
+msgstr "Cannoni:"
+
+#: src/market.c:82 src/market.c:104
+msgid "Weather vane:"
+msgstr "Banderuola:"
+
+#: src/market.c:84
+msgid "Cannonballs:"
+msgstr "Palle di cannone:"
+
+#: src/market.c:85
+msgid "Population:"
+msgstr "Popolazione:"
+
+#: src/market.c:86
+msgid "Taxes in %"
+msgstr "Tasse in %"
+
+#: src/market.c:99
+msgid "Market:"
+msgstr "Mercato:"
+
+#: src/market.c:101
+msgid "Lay bricks:"
+msgstr "Posare i mattoni:"
+
+#: src/market.c:102
+msgid "Shaft tower:"
+msgstr "Castelletto:"
+
+#: src/market.c:103
+msgid "Cannon:"
+msgstr "Cannone:"
+
+#: src/market.c:105
+msgid "Powder x30:"
+msgstr "Polvere x30:"
+
+#: src/market.c:106
+msgid "2 cannonballs:"
+msgstr "2 palle di cannone:"
+
+#: src/market.c:114 src/screen.c:56
+msgid "Done"
+msgstr "Fatto"
+
+#: src/market.c:135
+msgid " Lay bricks: "
+msgstr " Posa i mattoni: "
+
+#: src/market.c:136 src/market.c:162
+#, c-format
+msgid " Bricks left: %02d "
+msgstr " Mattoni rimasti: %02d "
+
+#: src/settings.c:64
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: src/settings.c:67 src/settings.c:246
+msgid "Player 1"
+msgstr "Giocatore 1"
+
+#: src/settings.c:68 src/settings.c:85
+msgid "Name:"
+msgstr "Nome:"
+
+#: src/settings.c:70 src/settings.c:87
+msgid "Human"
+msgstr "Umano"
+
+#: src/settings.c:71 src/settings.c:88
+msgid "Computer"
+msgstr "Computer"
+
+#: src/settings.c:72 src/settings.c:89
+msgid "AI strategy:"
+msgstr "Strategia IA:"
+
+#: src/settings.c:77 src/settings.c:94
+msgid "AI strength:"
+msgstr "Forza IA:"
+
+#: src/settings.c:84 src/settings.c:250
+msgid "Player 2"
+msgstr "Giocatore 2"
+
+#: src/settings.c:100
+msgid "Maximum rounds:"
+msgstr "Numero di turni:"
+
+#: src/settings.c:104
+msgid "unlimited"
+msgstr "illimitato"
+
+#: src/settings.c:106
+msgid "King may capitulate"
+msgstr "Il Re può arrendersi"
+
+#: src/settings.c:107
+msgid "Players may build"
+msgstr "I giocatori possono costruire"
+
+#: src/settings.c:109 src/settings.c:244
+msgid "New game"
+msgstr "Nuova partita"
+
+#: src/settings.c:110
+msgid "Continue game"
+msgstr "Continua la partita"
+
+#: src/settings.c:111
+msgid "Exit program"
+msgstr "Esci dal programma"
