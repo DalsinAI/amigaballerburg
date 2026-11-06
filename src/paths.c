@@ -266,6 +266,14 @@ void Paths_Init(const char *argv0)
 		strcpy(sWorkingDir, ".");
 	}
 
+#ifdef __amigaos__
+	/* AmigaOS: baller.dat and baller.mus are in the drawer's data/ (the
+	 * game puts a "/" between this and the name) */
+	strcpy(sDataDir, "PROGDIR:data");
+	strcpy(sLocaleDir, "PROGDIR:locale");
+	return;
+#endif
+
 	/* Get the directory where the executable resides */
 	psExecDir = Paths_InitExecDir(argv0);
 
