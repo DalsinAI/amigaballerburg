@@ -1,0 +1,68 @@
+# Ballerburg 1.2.2 for AmigaOS 3.x, 68040/68060 + FPU, on OpenGPU's SDL 2.
+#
+#   make -f amiga/Makefile.amigaos dist \
+#        STOVE=/path/to/openamigagcc-16.2.0-open4 \
+#        SDL2KIT=/path/to/opengpu-sdk
+#
+# src/CMakeLists.txt's sources, built for SDL 2 (WITH_SDL2: CMake picks SDL 2 when it finds it), with
+# amiga/config.h for CMake's. SDL2KIT is the OpenGPU developer kit (SDL2:
+# the program's half of LIBS:OpenGPU/SDL2.module).
+
+STOVE   ?= $(HOME)/CradleLab/toolchain/openamigagcc-16.2.0-open4-x86_64-linux
+SDL2KIT ?= /mnt/amigachrome/team2/deps/opengpu-sdk
+CC      = $(STOVE)/bin/m68k-amigaos-gcc
+STRIP   = $(STOVE)/bin/m68k-amigaos-strip
+CPU     ?= -m68040 -m68881
+# -fno-tree-loop-distribute-patterns: GCC 16's loop miscompile (the kit's
+# sdl2-config gives it for GCC 16 too).
+OPT     ?= -O2 -fomit-frame-pointer -fno-tree-loop-distribute-patterns
+
+BUILD   = build/amigaos
+OBJDIR  = $(BUILD)/obj
+PROG    = Ballerburg
+OUT     = dist/Ballerburg
+
+DEFS    = -D__amigaos__ -DNDEBUG -DWITH_SDL2=1
+INC     = -Iamiga -Isrc -I$(SDL2KIT)/include/SDL2 -I$(SDL2KIT)/include
+CFLAGS  = -noixemul $(OPT) $(CPU) -fno-common -MMD -MP -std=gnu99 -w
+LDFLAGS = -noixemul $(CPU)
+LIBS    = -L$(SDL2KIT)/lib -lSDL2 -lpthread -latomic -lm
+
+SRC     = src/baller1.c src/baller2.c src/ballergui.c src/cannoneer.c src/screen.c \
+          src/psg.c src/dlgAlert.c src/sdlgui.c src/market.c src/music.c src/paths.c \
+          src/settings.c src/sdlgfx.c amiga/stack.c
+OBJS    = $(SRC:%.c=$(OBJDIR)/%.o)
+ICONS   = $(wildcard amiga/icons/*.info)
+
+all: $(BUILD)/$(PROG)
+
+$(BUILD)/$(PROG): $(OBJS)
+	$(CC) $(LDFLAGS) -o $@.debug $(OBJS) $(LIBS)
+	$(STRIP) -o $@ $@.debug
+
+$(OBJDIR)/%.o: %.c
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) $(DEFS) $(INC) -c -o $@ $<
+
+# The drawer: the program; data/ with the castles (baller.dat) and the tune
+# (baller.mus); ReadMe, upstream's English and German manuals and the
+# licence.
+dist: $(BUILD)/$(PROG) $(ICONS) AMIGA_PORT.md
+	rm -rf $(OUT) && mkdir -p $(OUT)/data
+	cp $(BUILD)/$(PROG) $(OUT)/
+	cp src/baller.dat src/baller.mus $(OUT)/data/
+	cp AMIGA_PORT.md $(OUT)/ReadMe
+	cp doc/en/manual.html $(OUT)/manual.html
+	cp doc/de/anleitung.html $(OUT)/anleitung.html
+	cp COPYING.txt $(OUT)/COPYING.txt
+	cp amiga/icons/Ballerburg.info amiga/icons/ReadMe.info $(OUT)/
+	for f in COPYING.txt manual.html anleitung.html; do cp amiga/icons/ReadMe.info $(OUT)/$$f.info; done
+	cp amiga/icons/Folder.info $(OUT)/data.info
+	cp amiga/icons/Ballerburg-drawer.info dist/Ballerburg.info
+
+-include $(OBJS:.o=.d)
+
+clean:
+	rm -rf $(BUILD)
+
+.PHONY: all clean dist
