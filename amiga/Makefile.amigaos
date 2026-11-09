@@ -57,7 +57,6 @@ dist: $(BUILD)/$(PROG) $(ICONS) AMIGA_PORT.md
 	cp COPYING.txt $(OUT)/COPYING.txt
 	cp amiga/icons/Ballerburg.info amiga/icons/ReadMe.info $(OUT)/
 	for f in COPYING.txt manual.html anleitung.html; do cp amiga/icons/ReadMe.info $(OUT)/$$f.info; done
-	cp amiga/icons/Folder.info $(OUT)/data.info
 	cp amiga/icons/Ballerburg-drawer.info dist/Ballerburg.info
 
 -include $(OBJS:.o=.d)
