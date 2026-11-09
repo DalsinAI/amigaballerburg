@@ -547,6 +547,13 @@ void scr_update_rects(SDL_Surface *screen, int numrects, SDL_Rect *rects)
 	SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
 	SDL_RenderPresent(sdlRenderer);
 # else
+#ifdef __amigaos__
+	/* Right Amiga + F (window or full screen) gives the window a new
+	   surface: fetch it each time, or the picture goes to the old one */
+	windowSurf = SDL_GetWindowSurface(sdlWindow);
+	if (windowSurf == NULL)
+		return;
+#endif
 	SDL_BlitSurface(surf, rects, windowSurf, rects);
 	SDL_UpdateWindowSurfaceRects(sdlWindow, rects, numrects);
 # endif
