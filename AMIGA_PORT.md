@@ -67,5 +67,5 @@ Licences
 --------
 
 Ballerburg: GPL 3 or later (COPYING.txt). The Amiga files (amiga/): GPL 3
-or later, the AmiCradle Team; the icon is Debian's ballerburg.xpm (GPL 2 or
-later).
+or later, the AmiCradle Team; the icons are
+our own GlowIcons (amiga/icons/art/ballerburg.svg).
