@@ -117,6 +117,9 @@ int event(int wait, int allow_dlgs)
 			switch(ev.window.event) {
 			 case SDL_WINDOWEVENT_EXPOSED:
 			 case SDL_WINDOWEVENT_RESTORED:
+#ifdef __amigaos__
+			 case SDL_WINDOWEVENT_SIZE_CHANGED:
+#endif
 				scr_update(0, 0, 0, 0);
 				break;
 			}

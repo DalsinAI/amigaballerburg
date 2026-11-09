@@ -52,6 +52,7 @@ dist: $(BUILD)/$(PROG) $(ICONS) AMIGA_PORT.md
 	cp $(BUILD)/$(PROG) $(OUT)/
 	cp src/baller.dat src/baller.mus $(OUT)/data/
 	cp AMIGA_PORT.md $(OUT)/ReadMe
+	cp amiga/Controls $(OUT)/Controls
 	cp doc/en/manual.html $(OUT)/manual.html
 	cp doc/de/anleitung.html $(OUT)/anleitung.html
 	cp COPYING.txt $(OUT)/COPYING.txt
